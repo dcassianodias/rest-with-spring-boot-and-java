@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="build: arquivos de configuração.">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/TestLogController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/exceptiom/ExceptionResponse.java" afterDir="false" />
@@ -16,22 +13,11 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/entities/Person.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/repository/PersonRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/GreetingController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/Greeting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/GreetingController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/model/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-with-spring-boot-and-java-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-with-spring-boot-and-java-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.github.dcassianodias.StartupTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.github.dcassianodias.StartupTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.github.dcassianodias.StartupTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.github.dcassianodias.StartupTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +136,29 @@
       <option name="presentableId" value="Default" />
       <updated>1768354099986</updated>
     </task>
+    <task id="LOCAL-00001" summary="build: adição de configurações de banco de dados e logs.">
+      <option name="closed" value="true" />
+      <created>1769395828820</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769395828820</updated>
+    </task>
+    <task id="LOCAL-00002" summary="build: arquivos de configuração.">
+      <option name="closed" value="true" />
+      <created>1769395913643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769395913643</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build: adição de configurações de banco de dados e logs." />
+    <MESSAGE value="build: arquivos de configuração." />
+    <option name="LAST_COMMIT_MESSAGE" value="build: arquivos de configuração." />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
