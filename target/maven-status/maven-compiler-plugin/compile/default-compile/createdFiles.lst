@@ -1,1 +1,8 @@
+com\github\dcassianodias\model\entities\Person.class
+com\github\dcassianodias\exceptiom\ExceptionResponse.class
+com\github\dcassianodias\controllers\PersonController.class
+com\github\dcassianodias\model\service\PersonService.class
 com\github\dcassianodias\Startup.class
+com\github\dcassianodias\model\repository\PersonRepository.class
+com\github\dcassianodias\exceptiom\handler\CustomEntityResponseHandler.class
+com\github\dcassianodias\exceptiom\ResourceNotFoundException.class
