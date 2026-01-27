@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="build: arquivos de configuração.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/TestLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/exceptiom/ExceptionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/exceptiom/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/exceptiom/handler/CustomEntityResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/entities/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/repository/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" afterDir="false" />
+    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="build: classe de configuração">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/data/dto/PersonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/mapper/DozerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/unitTestsMapper/ObjectMapperTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/unitTestsMapper/mocks/MockPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/Greeting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/model/Greeting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/PersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/TestLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/TestLogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/model/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/model/service/PersonService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +55,9 @@
     <commands />
     <urls />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -65,26 +66,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.StartupTests.executor": "Run",
-    "Maven.rest-with-spring-boot-and-java [clean...].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Startup.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Projetos/rest-with-spring-boot-and-java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ObjectMapperTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StartupTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.mocks in rest-with-spring-boot-and-java.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest-with-spring-boot-and-java [clean...].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Startup.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projetos/rest-with-spring-boot-and-java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projetos\rest-with-spring-boot-and-java\src\test\java\com\github\dcassianodias\unitTestsMapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.github.dcassianodias.unitTestsMapper.mocks" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.dcassianodias.data.dto" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.Startup">
+    <configuration name="ObjectMapperTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-with-spring-boot-and-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.dcassianodias.unitTestsMapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.dcassianodias.unitTestsMapper" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.unitTestsMapper.ObjectMapperTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StartupTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-with-spring-boot-and-java" />
       <extension name="coverage">
@@ -96,6 +125,14 @@
       <option name="PACKAGE_NAME" value="com.github.dcassianodias" />
       <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.StartupTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mocks in rest-with-spring-boot-and-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-with-spring-boot-and-java" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/unitTestsMapper/mocks" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,6 +154,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Startup" />
+        <item itemvalue="JUnit.ObjectMapperTests" />
+        <item itemvalue="JUnit.mocks in rest-with-spring-boot-and-java" />
         <item itemvalue="JUnit.StartupTests" />
       </list>
     </recent_temporary>
@@ -152,13 +191,96 @@
       <option name="project" value="LOCAL" />
       <updated>1769395913643</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: custom exception.">
+      <option name="closed" value="true" />
+      <created>1769396020950</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769396020950</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor: removal of test classes.">
+      <option name="closed" value="true" />
+      <created>1769396098117</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769396098117</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: creation of entity class.">
+      <option name="closed" value="true" />
+      <created>1769396125430</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769396125430</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: creation of controller class.">
+      <option name="closed" value="true" />
+      <created>1769396137649</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1769396137649</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: creation of repository class.">
+      <option name="closed" value="true" />
+      <created>1769396147762</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1769396147762</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: creation a service class and adding logs.">
+      <option name="closed" value="true" />
+      <created>1769396239141</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769396239141</updated>
+    </task>
+    <task id="LOCAL-00009" summary="build: adding dependencies for logs">
+      <option name="closed" value="true" />
+      <created>1769396275443</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1769396275443</updated>
+    </task>
+    <task id="LOCAL-00010" summary="build: classe de configuração">
+      <option name="closed" value="true" />
+      <created>1769396300976</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1769396300976</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build: adição de configurações de banco de dados e logs." />
     <MESSAGE value="build: arquivos de configuração." />
-    <option name="LAST_COMMIT_MESSAGE" value="build: arquivos de configuração." />
+    <MESSAGE value="feat: custom exception." />
+    <MESSAGE value="refactor: removal of test classes." />
+    <MESSAGE value="feat: creation of entity class." />
+    <MESSAGE value="feat: creation of controller class." />
+    <MESSAGE value="feat: creation of repository class." />
+    <MESSAGE value="feat: creation a service class and adding logs." />
+    <MESSAGE value="build: adding dependencies for logs" />
+    <MESSAGE value="build: classe de configuração" />
+    <option name="LAST_COMMIT_MESSAGE" value="build: classe de configuração" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/github/dcassianodias/unitTestsMapper/ObjectMapperTests.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
