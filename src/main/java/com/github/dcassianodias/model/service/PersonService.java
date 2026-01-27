@@ -1,11 +1,12 @@
 package com.github.dcassianodias.model.service;
 
+import com.github.dcassianodias.data.dto.PersonDTO;
 import com.github.dcassianodias.exceptiom.ResourceNotFoundException;
+import static com.github.dcassianodias.mapper.DozerMapper.parseListObjects;
+import static com.github.dcassianodias.mapper.DozerMapper.parseObject;
 import com.github.dcassianodias.model.entities.Person;
 import com.github.dcassianodias.model.repository.PersonRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,32 +22,35 @@ public class PersonService {
     @Autowired
     private PersonRepository repository;
 
-    public Person findById(Long id) {
+    public PersonDTO findById(Long id) {
         log.info("Finding one person!");
-        return repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No records found for this ID"));
+        var entity = repository.findById(id).orElseThrow(() ->
+                new ResourceNotFoundException("No records found for this ID"));
+        return parseObject(entity, PersonDTO.class);
     }
 
-    public List<Person> findAll() {
+    public List<PersonDTO> findAll() {
         log.info("Finding all persons!");
-        return repository.findAll();
+        return parseListObjects(repository.findAll(), PersonDTO.class);
     }
 
-    public Person create(Person person) {
+    public PersonDTO create(PersonDTO personDTO) {
         log.info("Creating one person!");
-        return repository.save(person);
+        var entity = parseObject(personDTO, Person.class);
+        return parseObject(repository.save(entity), PersonDTO.class);
     }
 
-    public Person update(Person person) {
+    public PersonDTO update(PersonDTO personDTO) {
         log.info("Updating one person!");
-        Person entity = repository.findById(person.getId()).orElseThrow(() ->
+        Person entity = repository.findById(personDTO.getId()).orElseThrow(() ->
                 new ResourceNotFoundException("No records found for this ID"));
 
-        entity.setFirstName(person.getFirstName());
-        entity.setLastName(person.getLastName());
-        entity.setAddress(person.getAddress());
-        entity.setGender(person.getGender());
+        entity.setFirstName(personDTO.getFirstName());
+        entity.setLastName(personDTO.getLastName());
+        entity.setAddress(personDTO.getAddress());
+        entity.setGender(personDTO.getGender());
 
-        return repository.save(entity);
+        return parseObject(repository.save(entity), PersonDTO.class);
 
     }
 

@@ -1,12 +1,11 @@
 package com.github.dcassianodias.controllers;
 
-import com.github.dcassianodias.model.entities.Person;
+import com.github.dcassianodias.data.dto.PersonDTO;
 import com.github.dcassianodias.model.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import org.springframework.web.util.UriBuilder;
 
 import java.net.URI;
 import java.util.List;
@@ -19,29 +18,31 @@ public class PersonController {
     private PersonService service;
 
     @GetMapping("/{id}")
-    public Person findById(@PathVariable("id") Long id) {
+    public PersonDTO findById(@PathVariable("id") Long id) {
         return service.findById(id);
     }
 
     @GetMapping
-    public List<Person> findAll() {
+    public List<PersonDTO> findAll() {
         return service.findAll();
     }
 
     @PostMapping
-    public ResponseEntity<Person> create(@RequestBody Person person) {
-        service.create(person);
+    public ResponseEntity<PersonDTO> create(@RequestBody PersonDTO personDTO) {
+        PersonDTO savedPerson = service.create(personDTO);
+
         URI uri = ServletUriComponentsBuilder
                 .fromCurrentRequest()
                 .path("/{id}")
-                .buildAndExpand(person.getId())
+                .buildAndExpand(savedPerson.getId())
                 .toUri();
-        return ResponseEntity.created(uri).body(person);
+
+        return ResponseEntity.created(uri).body(savedPerson);
     }
 
     @PutMapping
-    public Person update(@RequestBody Person person) {
-        return service.update(person);
+    public PersonDTO update(@RequestBody PersonDTO personDTO) {
+        return service.update(personDTO);
     }
 
     @DeleteMapping("/{id}")
