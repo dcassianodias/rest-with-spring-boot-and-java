@@ -4,36 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="build: configurations">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-with-spring-boot-and-java.iml" afterDir="false" />
+    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="refactor: configuration files">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/data/dto/v2/PersonDTOV2.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/mapper/custom/PersonMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_table_person.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__population_table_person.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__insert_more_people.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/data/dto/v2/PersonDTOV2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/mapper/custom/PersonMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__create_table_person.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__population_table_person.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V3__insert_more_people.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/TestLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/TestLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/data/dto/PersonDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/data/dto/v2/PersonDTOV2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/unitTestsMapper/ObjectMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/unitTestsMapper/ObjectMapperTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/unitTestsMapper/mocks/MockPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/unitTestsMapper/mocks/MockPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/PersonController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/TestLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/TestLogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/data/dto/PersonDTO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/model/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/model/service/PersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.github.dcassianodias.StartupTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.github.dcassianodias.StartupTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/dcassianodias/unitTestsMapper/ObjectMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/dcassianodias/unitTestsMapper/ObjectMapperTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/dcassianodias/unitTestsMapper/mocks/MockPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/dcassianodias/unitTestsMapper/mocks/MockPerson.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,7 +338,79 @@
       <option name="project" value="LOCAL" />
       <updated>1769482955588</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="build: changing jpa settings">
+      <option name="closed" value="true" />
+      <created>1769743115661</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1769743115661</updated>
+    </task>
+    <task id="LOCAL-00020" summary="build: configuration files">
+      <option name="closed" value="true" />
+      <created>1769743185871</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1769743185871</updated>
+    </task>
+    <task id="LOCAL-00021" summary="refactor: adding the version">
+      <option name="closed" value="true" />
+      <created>1769743242708</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1769743242708</updated>
+    </task>
+    <task id="LOCAL-00022" summary="refactor: adding the version">
+      <option name="closed" value="true" />
+      <created>1769743259663</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1769743259663</updated>
+    </task>
+    <task id="LOCAL-00023" summary="refactor: adding the version">
+      <option name="closed" value="true" />
+      <created>1769743279053</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1769743279054</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactor: configuration files">
+      <option name="closed" value="true" />
+      <created>1769743367867</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1769743367867</updated>
+    </task>
+    <task id="LOCAL-00025" summary="refactor: configuration files">
+      <option name="closed" value="true" />
+      <created>1769743375877</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1769743375877</updated>
+    </task>
+    <task id="LOCAL-00026" summary="refactor: configuration files">
+      <option name="closed" value="true" />
+      <created>1769743382811</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1769743382811</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor: configuration files">
+      <option name="closed" value="true" />
+      <created>1769743432564</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1769743432564</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -371,7 +431,11 @@
     <MESSAGE value="feat: creation of DTO class;" />
     <MESSAGE value="build: add dependency for Dozer" />
     <MESSAGE value="build: configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="build: configurations" />
+    <MESSAGE value="build: changing jpa settings" />
+    <MESSAGE value="build: configuration files" />
+    <MESSAGE value="refactor: adding the version" />
+    <MESSAGE value="refactor: configuration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: configuration files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
