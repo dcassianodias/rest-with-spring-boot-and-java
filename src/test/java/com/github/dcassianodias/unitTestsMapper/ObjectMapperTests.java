@@ -1,7 +1,7 @@
 package com.github.dcassianodias.unitTestsMapper;
 
 
-import com.github.dcassianodias.data.dto.PersonDTO;
+import com.github.dcassianodias.data.dto.v1.PersonDTO;
 import com.github.dcassianodias.model.entities.Person;
 import com.github.dcassianodias.unitTestsMapper.mocks.MockPerson;
 import org.junit.jupiter.api.BeforeEach;
