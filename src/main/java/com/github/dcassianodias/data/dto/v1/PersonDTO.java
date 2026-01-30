@@ -1,4 +1,4 @@
-package com.github.dcassianodias.data.dto;
+package com.github.dcassianodias.data.dto.v1;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
