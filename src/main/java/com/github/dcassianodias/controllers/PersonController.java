@@ -1,6 +1,7 @@
 package com.github.dcassianodias.controllers;
 
-import com.github.dcassianodias.data.dto.PersonDTO;
+import com.github.dcassianodias.data.dto.v1.PersonDTO;
+import com.github.dcassianodias.data.dto.v2.PersonDTOV2;
 import com.github.dcassianodias.model.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +12,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/person")
+@RequestMapping("/api/person/v1")
 public class PersonController {
 
     @Autowired
@@ -30,6 +31,19 @@ public class PersonController {
     @PostMapping
     public ResponseEntity<PersonDTO> create(@RequestBody PersonDTO personDTO) {
         PersonDTO savedPerson = service.create(personDTO);
+
+        URI uri = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(savedPerson.getId())
+                .toUri();
+
+        return ResponseEntity.created(uri).body(savedPerson);
+    }
+
+    @PostMapping("/v2")
+    public ResponseEntity<PersonDTOV2> createV2(@RequestBody PersonDTOV2 personDTO) {
+        PersonDTOV2 savedPerson = service.createV2(personDTO);
 
         URI uri = ServletUriComponentsBuilder
                 .fromCurrentRequest()
