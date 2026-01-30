@@ -1,6 +1,6 @@
 package com.github.dcassianodias.unitTestsMapper.mocks;
 
-import com.github.dcassianodias.data.dto.PersonDTO;
+import com.github.dcassianodias.data.dto.v1.PersonDTO;
 import com.github.dcassianodias.model.entities.Person;
 
 import java.util.ArrayList;
