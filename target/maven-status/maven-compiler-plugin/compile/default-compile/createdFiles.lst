@@ -1,8 +1,13 @@
 com\github\dcassianodias\model\entities\Person.class
-com\github\dcassianodias\exceptiom\ExceptionResponse.class
+com\github\dcassianodias\data\dto\v1\PersonDTO.class
 com\github\dcassianodias\controllers\PersonController.class
+com\github\dcassianodias\controllers\TestLogController.class
+com\github\dcassianodias\exceptiom\handler\CustomEntityResponseHandler.class
+com\github\dcassianodias\exceptiom\ExceptionResponse.class
+com\github\dcassianodias\mapper\DozerMapper.class
+com\github\dcassianodias\mapper\custom\PersonMapper.class
 com\github\dcassianodias\model\service\PersonService.class
+com\github\dcassianodias\data\dto\v2\PersonDTOV2.class
 com\github\dcassianodias\Startup.class
 com\github\dcassianodias\model\repository\PersonRepository.class
-com\github\dcassianodias\exceptiom\handler\CustomEntityResponseHandler.class
 com\github\dcassianodias\exceptiom\ResourceNotFoundException.class
