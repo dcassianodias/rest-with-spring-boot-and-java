@@ -6,13 +6,6 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
-@JsonPropertyOrder({
-        "id",
-        "firstName",
-        "lastName",
-        "address",
-        "gender"
-})
 @Entity
 @Table(name = "person")
 public class Person implements Serializable {
