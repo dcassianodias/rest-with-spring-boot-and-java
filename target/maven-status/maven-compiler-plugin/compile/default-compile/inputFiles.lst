@@ -1,3 +1,5 @@
+C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\config\ObjectMapperConfig.java
+C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\config\WebConfig.java
 C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\controllers\PersonController.java
 C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\controllers\TestLogController.java
 C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\data\dto\v1\PersonDTO.java
@@ -10,4 +12,6 @@ C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodia
 C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\model\entities\Person.java
 C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\model\repository\PersonRepository.java
 C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\model\service\PersonService.java
+C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\serialization\converter\YamlJackson2HttpMessageConverter.java
+C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\serializer\GenderSerialize.java
 C:\Projetos\rest-with-spring-boot-and-java\src\main\java\com\github\dcassianodias\Startup.java
