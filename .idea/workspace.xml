@@ -4,13 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="fix: remove unused imports.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/serialization/converter/YamlJackson2HttpMessageConverter.java" afterDir="false" />
+    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="feat: config for Content Negotiation">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-no-db.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/PersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/data/dto/v1/PersonDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/data/dto/v1/PersonDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/data/dto/v1/PersonDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/data/dto/v1/PersonDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/model/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/model/service/PersonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.github.dcassianodias.StartupTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.github.dcassianodias.unitTestsMapper.ObjectMapperTests.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +68,9 @@
     &quot;accountId&quot;: &quot;53673a26-d97f-4741-be30-6aef0d5d8260&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.2.15/spring-web-6.2.15.jar!/org/springframework/http/MediaType.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -86,7 +101,7 @@
     &quot;Spring Boot.Startup.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projetos/rest-with-spring-boot-and-java/src/main/resources/db/migration&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projetos/rest-with-spring-boot-and-java/src/main/resources&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -95,6 +110,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projetos\rest-with-spring-boot-and-java\src\main\resources" />
       <recent name="C:\Projetos\rest-with-spring-boot-and-java\src\main\resources\db\migration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -538,13 +554,42 @@
       <option name="project" value="LOCAL" />
       <updated>1770493792528</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="build: add dependecy for Content Negotiation.">
+      <option name="closed" value="true" />
+      <created>1770498484737</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1770498484737</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feat: add produces for XML and YAML">
+      <option name="closed" value="true" />
+      <created>1770498541611</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1770498541611</updated>
+    </task>
+    <task id="LOCAL-00046" summary="feat: config for Content Negotiation">
+      <option name="closed" value="true" />
+      <created>1770498575594</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1770498575594</updated>
+    </task>
+    <task id="LOCAL-00047" summary="feat: config for Content Negotiation">
+      <option name="closed" value="true" />
+      <created>1770498588230</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1770498588230</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build: classe de configuração" />
-    <MESSAGE value="feat: creation of mapper class;" />
-    <MESSAGE value="feat: creation of mock class;" />
     <MESSAGE value="test: creation of mock class tests;" />
     <MESSAGE value="feat: adaptation of controller class for DTO mappers;" />
     <MESSAGE value="feat: creation of DTO class;" />
@@ -567,7 +612,10 @@
     <MESSAGE value="fix: remove json serialize." />
     <MESSAGE value="feat: add json serialize in dto class." />
     <MESSAGE value="fix: remove unused imports." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: remove unused imports." />
+    <MESSAGE value="build: add dependecy for Content Negotiation." />
+    <MESSAGE value="feat: add produces for XML and YAML" />
+    <MESSAGE value="feat: config for Content Negotiation" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: config for Content Negotiation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -577,6 +625,10 @@
           <line>21</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.PropertyValueException" package="org.hibernate" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
