@@ -26,7 +26,7 @@ public class PersonService {
     private PersonRepository repository;
 
     @Autowired
-    private static PersonMapper mapper = new PersonMapper();
+    private PersonMapper mapper = new PersonMapper();
 
     public PersonDTO findById(Long id) {
         log.info("Finding one person!");

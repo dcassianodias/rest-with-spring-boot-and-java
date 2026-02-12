@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="feat: add configs for HATEOAS." />
+    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="feat: add configs for HATEOAS.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/model/service/PersonServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +36,7 @@
         <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -67,28 +73,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.ObjectMapperTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StartupTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.mocks in rest-with-spring-boot-and-java.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.rest-with-spring-boot-and-java [clean...].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Startup.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projetos/rest-with-spring-boot-and-java/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ObjectMapperTests.executor": "Run",
+    "JUnit.PersonServiceTest.delete_ShouldReturnDeletedPersonDTO_WhenIdExists.executor": "Run",
+    "JUnit.PersonServiceTest.executor": "Run",
+    "JUnit.PersonServiceTest.findById.executor": "Run",
+    "JUnit.PersonServiceTest.findById_ShouldReturnPersonDTO_WhenIdExists.executor": "Run",
+    "JUnit.PersonServiceTest.findById_ShouldThrowException_WhenIdNotExists.executor": "Run",
+    "JUnit.PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdExists.executor": "Run",
+    "JUnit.StartupTests.executor": "Run",
+    "JUnit.mocks in rest-with-spring-boot-and-java.executor": "Run",
+    "Maven.rest-with-spring-boot-and-java [clean...].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Startup.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Projetos/rest-with-spring-boot-and-java/src/main/resources",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projetos\rest-with-spring-boot-and-java\src\main\resources" />
@@ -101,8 +115,14 @@
       <recent name="C:\Projetos\rest-with-spring-boot-and-java\src\main\resources" />
       <recent name="C:\Projetos\rest-with-spring-boot-and-java\src\main\resources\db\migration\migration" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.github.dcassianodias.unitTestsMapper.mocks" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.github.dcassianodias.model.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.github.dcassianodias.data.dto.v2" />
@@ -114,65 +134,93 @@
       <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Startup">
-    <configuration name="ObjectMapperTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PersonServiceTest">
+    <configuration name="PersonServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-with-spring-boot-and-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.dcassianodias.unitTestsMapper.*" />
+          <option name="PATTERN" value="com.github.dcassianodias.model.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.github.dcassianodias.unitTestsMapper" />
-      <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.unitTestsMapper.ObjectMapperTests" />
+      <option name="PACKAGE_NAME" value="com.github.dcassianodias.model.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.model.service.PersonServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartupTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonServiceTest.delete_ShouldReturnDeletedPersonDTO_WhenIdExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-with-spring-boot-and-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.dcassianodias.*" />
+          <option name="PATTERN" value="com.github.dcassianodias.model.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.github.dcassianodias" />
-      <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.StartupTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.github.dcassianodias.model.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.model.service.PersonServiceTest" />
+      <option name="METHOD_NAME" value="delete_ShouldReturnDeletedPersonDTO_WhenIdExists" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mocks in rest-with-spring-boot-and-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonServiceTest.delete_ShouldThrowException_WhenIdNotExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-with-spring-boot-and-java" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/unitTestsMapper/mocks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.dcassianodias.model.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.dcassianodias.model.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.model.service.PersonServiceTest" />
+      <option name="METHOD_NAME" value="delete_ShouldThrowException_WhenIdNotExists" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Startup" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+    <configuration name="PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-with-spring-boot-and-java" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.dcassianodias.Startup" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.dcassianodias.*" />
+          <option name="PATTERN" value="com.github.dcassianodias.model.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.github.dcassianodias.model.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.model.service.PersonServiceTest" />
+      <option name="METHOD_NAME" value="update_ShouldReturnPersonDTO_WhenIdExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdNotExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-with-spring-boot-and-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.dcassianodias.model.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.dcassianodias.model.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.model.service.PersonServiceTest" />
+      <option name="METHOD_NAME" value="update_ShouldReturnPersonDTO_WhenIdNotExists" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Startup" />
-        <item itemvalue="JUnit.mocks in rest-with-spring-boot-and-java" />
-        <item itemvalue="JUnit.StartupTests" />
-        <item itemvalue="JUnit.ObjectMapperTests" />
+        <item itemvalue="JUnit.PersonServiceTest" />
+        <item itemvalue="JUnit.PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdNotExists" />
+        <item itemvalue="JUnit.PersonServiceTest.delete_ShouldThrowException_WhenIdNotExists" />
+        <item itemvalue="JUnit.PersonServiceTest.delete_ShouldReturnDeletedPersonDTO_WhenIdExists" />
+        <item itemvalue="JUnit.PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdExists" />
       </list>
     </recent_temporary>
   </component>
@@ -190,14 +238,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768354099986</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feat: custom exception.">
-      <option name="closed" value="true" />
-      <created>1769396020950</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1769396020950</updated>
     </task>
     <task id="LOCAL-00004" summary="refactor: removal of test classes.">
       <option name="closed" value="true" />
@@ -583,7 +623,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770867828003</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="feat: add configs for HATEOAS.">
+      <option name="closed" value="true" />
+      <created>1770867983903</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1770867983903</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
