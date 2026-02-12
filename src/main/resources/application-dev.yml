@@ -4,6 +4,7 @@ spring:
          ?useSSL=false
          &serverTimezone=UTC
          &allowPublicKeyRetrieval=true
+
     username: root
     password: 2012
     driver-class-name: com.mysql.cj.jdbc.Driver
