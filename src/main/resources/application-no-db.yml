@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    enabled: false
+
+  jpa:
+    enabled: false
+
+  flyway:
+    enabled: false
