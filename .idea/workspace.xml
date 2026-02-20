@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="feat: add configs for HATEOAS.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dcassianodias/model/service/PersonServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="d0696816-59fa-4247-826a-fb8ca4952f3d" name="Changes" comment="fix: remoção de import não utilizado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/model/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dcassianodias/controllers/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/dcassianodias/controllers/PersonController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +35,9 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,36 +74,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ObjectMapperTests.executor": "Run",
-    "JUnit.PersonServiceTest.delete_ShouldReturnDeletedPersonDTO_WhenIdExists.executor": "Run",
-    "JUnit.PersonServiceTest.executor": "Run",
-    "JUnit.PersonServiceTest.findById.executor": "Run",
-    "JUnit.PersonServiceTest.findById_ShouldReturnPersonDTO_WhenIdExists.executor": "Run",
-    "JUnit.PersonServiceTest.findById_ShouldThrowException_WhenIdNotExists.executor": "Run",
-    "JUnit.PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdExists.executor": "Run",
-    "JUnit.StartupTests.executor": "Run",
-    "JUnit.mocks in rest-with-spring-boot-and-java.executor": "Run",
-    "Maven.rest-with-spring-boot-and-java [clean...].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Startup.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Projetos/rest-with-spring-boot-and-java/src/main/resources",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ObjectMapperTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonServiceTest.delete_ShouldReturnDeletedPersonDTO_WhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonServiceTest.delete_ShouldThrowException_WhenIdNotExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonServiceTest.findById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonServiceTest.findById_ShouldReturnPersonDTO_WhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonServiceTest.findById_ShouldThrowException_WhenIdNotExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdNotExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StartupTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.mocks in rest-with-spring-boot-and-java.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest-with-spring-boot-and-java [clean...].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Startup.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projetos/rest-with-spring-boot-and-java/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projetos\rest-with-spring-boot-and-java\src\main\resources" />
@@ -125,6 +128,7 @@
       <recent name="com.github.dcassianodias.model.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.dcassianodias.openapi.annotations" />
       <recent name="com.github.dcassianodias.data.dto.v2" />
       <recent name="com.github.dcassianodias.data.dto" />
     </key>
@@ -134,7 +138,7 @@
       <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PersonServiceTest">
+  <component name="RunManager" selected="Spring Boot.Startup">
     <configuration name="PersonServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-with-spring-boot-and-java" />
       <extension name="coverage">
@@ -182,22 +186,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-with-spring-boot-and-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.dcassianodias.model.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.dcassianodias.model.service" />
-      <option name="MAIN_CLASS_NAME" value="com.github.dcassianodias.model.service.PersonServiceTest" />
-      <option name="METHOD_NAME" value="update_ShouldReturnPersonDTO_WhenIdExists" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdNotExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-with-spring-boot-and-java" />
       <extension name="coverage">
@@ -214,13 +202,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Startup" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="rest-with-spring-boot-and-java" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.dcassianodias.Startup" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.dcassianodias.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PersonServiceTest" />
+        <item itemvalue="Spring Boot.Startup" />
         <item itemvalue="JUnit.PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdNotExists" />
         <item itemvalue="JUnit.PersonServiceTest.delete_ShouldThrowException_WhenIdNotExists" />
         <item itemvalue="JUnit.PersonServiceTest.delete_ShouldReturnDeletedPersonDTO_WhenIdExists" />
-        <item itemvalue="JUnit.PersonServiceTest.update_ShouldReturnPersonDTO_WhenIdExists" />
+        <item itemvalue="JUnit.PersonServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -238,62 +240,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768354099986</updated>
-    </task>
-    <task id="LOCAL-00004" summary="refactor: removal of test classes.">
-      <option name="closed" value="true" />
-      <created>1769396098117</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1769396098117</updated>
-    </task>
-    <task id="LOCAL-00005" summary="feat: creation of entity class.">
-      <option name="closed" value="true" />
-      <created>1769396125430</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1769396125430</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: creation of controller class.">
-      <option name="closed" value="true" />
-      <created>1769396137649</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1769396137649</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: creation of repository class.">
-      <option name="closed" value="true" />
-      <created>1769396147762</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1769396147762</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: creation a service class and adding logs.">
-      <option name="closed" value="true" />
-      <created>1769396239141</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1769396239141</updated>
-    </task>
-    <task id="LOCAL-00009" summary="build: adding dependencies for logs">
-      <option name="closed" value="true" />
-      <created>1769396275443</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1769396275443</updated>
-    </task>
-    <task id="LOCAL-00010" summary="build: classe de configuração">
-      <option name="closed" value="true" />
-      <created>1769396300976</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1769396300976</updated>
     </task>
     <task id="LOCAL-00011" summary="feat: creation of mapper class;">
       <option name="closed" value="true" />
@@ -631,17 +577,66 @@
       <option name="project" value="LOCAL" />
       <updated>1770867983903</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="feat: add configs for dev.yml and no-db">
+      <option name="closed" value="true" />
+      <created>1770925652985</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1770925652985</updated>
+    </task>
+    <task id="LOCAL-00054" summary="fix: method non static">
+      <option name="closed" value="true" />
+      <created>1770925719841</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1770925719841</updated>
+    </task>
+    <task id="LOCAL-00055" summary="test: creat unit test for service class.">
+      <option name="closed" value="true" />
+      <created>1770925739657</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1770925739657</updated>
+    </task>
+    <task id="LOCAL-00056" summary="feat: criação de annotations personalizadas para Responses">
+      <option name="closed" value="true" />
+      <created>1771554142088</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1771554142088</updated>
+    </task>
+    <task id="LOCAL-00057" summary="build: configuração de open-api.">
+      <option name="closed" value="true" />
+      <created>1771554179251</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1771554179251</updated>
+    </task>
+    <task id="LOCAL-00058" summary="feat: classe de configuração do swagger.">
+      <option name="closed" value="true" />
+      <created>1771554209529</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1771554209529</updated>
+    </task>
+    <task id="LOCAL-00059" summary="fix: remoção de import não utilizado">
+      <option name="closed" value="true" />
+      <created>1771554280026</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1771554280026</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build: configurations" />
-    <MESSAGE value="build: changing jpa settings" />
-    <MESSAGE value="build: configuration files" />
-    <MESSAGE value="refactor: adding the version" />
-    <MESSAGE value="refactor: configuration files" />
-    <MESSAGE value="refactor: creating the endpoint for V2" />
-    <MESSAGE value="refactor: creating the DTO for V2" />
     <MESSAGE value="refactor: creating the mappers for V2" />
     <MESSAGE value="refactor: Added the createv2 method to the service and added a mapper." />
     <MESSAGE value="refactor: route update for requests" />
@@ -660,7 +655,14 @@
     <MESSAGE value="build: configs" />
     <MESSAGE value="feat: add HATEOAS in delete method." />
     <MESSAGE value="feat: add configs for HATEOAS." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add configs for HATEOAS." />
+    <MESSAGE value="feat: add configs for dev.yml and no-db" />
+    <MESSAGE value="fix: method non static" />
+    <MESSAGE value="test: creat unit test for service class." />
+    <MESSAGE value="feat: criação de annotations personalizadas para Responses" />
+    <MESSAGE value="build: configuração de open-api." />
+    <MESSAGE value="feat: classe de configuração do swagger." />
+    <MESSAGE value="fix: remoção de import não utilizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: remoção de import não utilizado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
